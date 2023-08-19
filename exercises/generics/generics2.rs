@@ -6,14 +6,13 @@
 // Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 struct Wrapper {
-    value: u32,
+    value: String,
 }
 
 impl Wrapper {
-    pub fn new(value: u32) -> Self {
+    pub fn new(value: String) -> Self {
         Wrapper { value }
     }
 }
@@ -24,11 +23,11 @@ mod tests {
 
     #[test]
     fn store_u32_in_wrapper() {
-        assert_eq!(Wrapper::new(42).value, 42);
+        assert_eq!(Wrapper::new("42".to_string()).value, "42");
     }
 
     #[test]
     fn store_str_in_wrapper() {
-        assert_eq!(Wrapper::new("Foo").value, "Foo");
+        assert_eq!(Wrapper::new(String::from("Foo")).value, "Foo");
     }
 }
