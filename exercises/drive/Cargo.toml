@@ -1,0 +1,7 @@
+[package]
+name = "drive3"
+version = "0.0.1"
+edition = "2021"
+[[bin]]
+name = "drive3"
+path = "drive3.rs"
