@@ -6,6 +6,8 @@
 
 fn modify_by_address(value: &mut u32) {
     *value = 0xAABBCCDD;
+    // *value = 0xAA;
+    // print!(O)
 }
 #[cfg(test)]
 mod tests {

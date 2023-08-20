@@ -14,6 +14,7 @@ struct Foo {
 fn raw_pointer_to_box(address: usize) -> Box<Foo> {
     let mut foo = unsafe { Box::from_raw(address as *mut Foo) };
     foo.b = Some("hello".to_owned());
+    // print!(O)
     foo
 }
 #[cfg(test)]
